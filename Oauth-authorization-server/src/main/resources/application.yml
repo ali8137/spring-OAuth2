@@ -1,0 +1,12 @@
+server:
+  port: 9000
+
+spring:
+  # database configuration:
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauthdb
+    username: ${MYSQL_DB_USERNAME}
+    password: ${MYSQL_DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
